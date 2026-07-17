@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Direct Wi-Fi Mirror"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnDiscoverConnect"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="1. Discover & Connect to TV (Wi-Fi Direct)"
+        android:backgroundTint="#1428A0"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnStartNativeMirror"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="2. Start Native Samsung Miracast"
+        android:backgroundTint="#00796B"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnStartCustomStream"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="3. Start Custom MJPEG Stream (Fallback)"
+        android:backgroundTint="#F57C00"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Waiting..."
+        android:textColor="#AAAAAA"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+</LinearLayout>
